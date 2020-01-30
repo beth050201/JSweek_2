@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSY1018 JavaScript</title>
+
+<!-- add materialize and css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- 🔥🔥🔥🔥🔥🔥 start the lecture here javascript 🔥🔥🔥🔥🔥🔥 -->
+<script>
+//examples in slides
+// #1
+let myBoolean = true;
+let myNumber = 5;
+let mySecondNumber = 5.0;
+let myString = "peanuts and m&m's";//6/16
+
+// #2
+let a=5;
+//this is fine
+a=7
+
+
+// #3
+const b = 5;
+// this is not ok
+b = 10;
+
+// #4
+var b = 5;
+//don't use
+b = 10;
+
+// #5
+let myString = "gummy bears"
+myString = null;
+// my string === null
+
+let unassignedVariable;
+//unassignedVariable === undefined
+
+</script>
+<!-- 🔥🔥🔥🔥🔥🔥 start part 2 - lecture here javascript 🔥🔥🔥🔥🔥🔥 -->
+<script>
+
+    let a   = 10;
+    let b   = 3;
+    let c   = 15;
+    const d = '5';
+    let e   = 'my name';
+    const f = 'is liz';
+
+    console.group('Addition');
+    console.log(a+b);//13
+    console.log(e + ' ' + f);
+    console.log(e += ' is the batman');
+    console.groupEnd();
+
+    console.group('Multiplication');
+    console.log(a * 3);
+    console.log(a * b);
+    console.log(b * c);
+    console.groupEnd();
+
+    a++;
+    b--;
+    --b;
+    c += a;
+    console.group('Incrementing');
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.groupEnd();  
+</script>
+</body>
+</html>
